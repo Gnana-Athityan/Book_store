@@ -1,1 +1,1 @@
-export const Mongo = "mongodb+srv://Gnana:Athityan@cluster0.rxazotu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+export const Mongo = "mongodb+srv://Gnana:Athityan@cluster0.rxazotu.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0"

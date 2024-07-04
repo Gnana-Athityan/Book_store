@@ -5,17 +5,16 @@ import { Book } from './models/bookmodel.js'
 import booksroute from './routes/booksroute.js'
 import cors from 'cors'
 const app = express()
-app.use(express.json());
 app.use(cors(
-    {
-        origin: ['https://book-store-two-peach.vercel.app'],
-        // origin: ['http://localhost:3001'],
-        methods: ['GET,HEAD,PUT,PATCH,POST,DELETE'],
-        credentials: true
-    
-    }
-))
-
+        {
+                origin: ['https://book-store-two-peach.vercel.app'],
+                methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+                credentials: true
+        
+            }
+        ))
+        
+app.use(express.json());
 app.use('/books', booksroute)
 
 
