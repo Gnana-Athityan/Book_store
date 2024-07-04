@@ -9,7 +9,7 @@ function Update() {
   const [Title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const [price, setPrice] = useState('')
-  axios.defaults.withCredentials = true;
+  // axios.defaults.withCredentials = true;
 
   useEffect(()=>{
     axios.get(`https://book-store-two-peach.vercel.app/books/${id}`).then((res)=>{
@@ -27,7 +27,7 @@ function Update() {
       price
     }
     
-    axios.put(`http://localhost:3000/books/${id}`, data).then(
+    axios.put(`https://book-store-two-peach.vercel.app/books/${id}`, data).then(
       ()=>{
         navigate('/')
       }
