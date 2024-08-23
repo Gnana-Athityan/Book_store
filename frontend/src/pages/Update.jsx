@@ -39,7 +39,7 @@ function Update() {
   }
   return (
       <div >
-      <Link to={'/'}> <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}>Home Page</button></Link>
+      <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}>Home Page</button>
       <div className='form1'>
         <label htmlFor="Title">Name</label>
         <input type="text" value={Title} onChange={(e)=>setTitle(e.target.value)}/><br></br>
