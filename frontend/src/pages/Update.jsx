@@ -4,6 +4,8 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import '../index.css'
+import { Link } from 'react-router-dom'
+
 
 function Update() {
   const { id } = useParams()
@@ -39,7 +41,7 @@ function Update() {
   }
   return (
       <div >
-      <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}>Home Page</button>
+      <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}><Link to={'/'}>Home Page</Link></button>
       <div className='form1'>
         <label htmlFor="Title">Name</label>
         <input type="text" value={Title} onChange={(e)=>setTitle(e.target.value)}/><br></br>
