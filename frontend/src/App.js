@@ -15,7 +15,6 @@ export default function App() {
         <Route path= '/create'element={<Create/>}/>
         <Route path= '/update/:id'element={<Update/>}/>
         <Route path= '/delete/:id'element={<Delete/>}/>
-        <Route path='/home' element={<Home/>}/>
 
       </Routes>
     </div>
