@@ -2,6 +2,8 @@ import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../index.css'
+
 export default function Home() {
     const [data, setData] = useState([])
     const[loading,setloading] = useState(false)
@@ -23,7 +25,7 @@ export default function Home() {
     <div>
       <center>
     <div>
-      <h1><Link to = '/create'><button>Create</button></Link></h1>
+      <h1><Link to = '/create'><button className='but'>Create</button></Link></h1>
       <table>
         <thead>
           <tr>
@@ -41,8 +43,8 @@ export default function Home() {
                     <td>{book.author}</td>
                     <td>{book.price}</td>
                     <td>
-                        <Link to={`/update/${book._id}`}>Update</Link>
-                        <Link to={`/delete/${book._id}`}>Delete</Link>
+                        <button className='but'><Link style={{color: 'white'}} to={`/update/${book._id}`}>Update</Link></button>
+                        <button className='but'><Link style={{color: 'white'}} to={`/delete/${book._id}`}>Delete</Link></button>
                     </td>
                 </tr>
                 )
