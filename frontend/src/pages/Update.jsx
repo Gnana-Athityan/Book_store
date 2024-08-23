@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import '../index.css'
+
 function Update() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -36,11 +38,18 @@ function Update() {
     })
   }
   return (
-    <div>
-      <label htmlFor="Title">Title</label>
-      <input type="text" value={Title} onChange={(e)=>setTitle(e.target.value)}/>
-      <button onClick={HandleUpdate}>Update</button>
-    </div>
+      <div >
+      <Link to={'/'}> <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}>Home Page</button></Link>
+      <div className='form1'>
+        <label htmlFor="Title">Name</label>
+        <input type="text" value={Title} onChange={(e)=>setTitle(e.target.value)}/><br></br>
+        <label htmlFor="Title">Author</label>
+        <input type="text" value={author} onChange={(e)=>setAuthor(e.target.value)}/><br></br>
+        <label htmlFor="Title">Value</label>
+        <input type="text" value={price} onChange={(e)=>setPrice(e.target.value)}/><br></br>
+        <button onClick={HandleUpdate}>Update</button>
+      </div>
+      </div>
   )
 }
 
