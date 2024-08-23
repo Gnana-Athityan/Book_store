@@ -28,7 +28,7 @@ function Create() {
   return (
     <div >
         
-    <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}> <Link to = {'/'}>Home Page</Link></button>
+    <button className='but' style={{textAlign: 'center', marginLeft:'700px', marginBottom:'50px'}}> <Link to = {'/home'}>Home Page</Link></button>
     <div className='form1'>
       <label>Title</label><br></br>
         <input type='text' value={Title} onChange={(e)=>settitle(e.target.value)}/><br></br>
