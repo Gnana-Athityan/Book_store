@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 
+.but{
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.but:hover {
+  background-color: rgb(79, 5, 148);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+  border: 1px solid black; /* Add a border to the table */
+  text-align: center; /* Center the contents inside the table */
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center; /* Center the contents inside the table cells */
+  border-bottom: 1px solid #ddd;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+table th {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.form1 {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form1 input[type="text"],
+.form1 input[type="email"],
+.form1 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form1 input[type="text"]:focus,
+.form1 input[type="email"]:focus,
+.form1 textarea:focus {
+  border-color: dodgerblue;
+}
+
+.form1 button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form1 button:hover {
+  background-color: rgb(5, 12, 35);
+}
+
+.form1 .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.form1 .success-message {
+  color: green;
+  margin-bottom: 10px;
+}
+
+
+
